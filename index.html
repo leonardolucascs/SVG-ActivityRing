@@ -1,0 +1,38 @@
+<html>
+
+	<head>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<div class="screen">
+			<div id="app">
+				<svg class="ActivityRings" viewBox='0 0 37 37'>
+					<!-- RED circle -->
+					<!-- Stroke width = 3 / scaling-factor - SVG Essential Chapter 5 -->
+					<g class="ring ring1" style="transform: scale(1) rotate(-90deg);">
+						<circle stroke-width="3" r="15.915" cx="50%" cy="50%" class="background"></circle>
+						<circle stroke-width="3" r="15.915" cx="50%" cy="50%" class="completed"
+							stroke-dasharray="85, 100">
+						</circle>
+					</g>
+					<!-- GREEN circle -->
+					<g class="ring ring2" style="transform: scale(0.75) rotate(-90deg);">
+						<circle stroke-width="4" r="15.915" cx="50%" cy="50%" class="background"></circle>
+						<circle stroke-width="4" r="15.915" cx="50%" cy="50%" class="completed"
+							stroke-dasharray="80, 100">
+						</circle>
+					</g>
+					<!-- CYAN circle -->
+					<g class="ring ring3" style="transform: scale(0.5) rotate(-90deg);">
+						<circle stroke-width="6" r="15.915" cx="50%" cy="50%" class="background"></circle>
+						<circle stroke-width="6" r="15.915" cx="50%" cy="50%" class="completed"
+							stroke-dasharray="60, 100">
+						</circle>
+					</g>
+				</svg>
+			</div>
+		</div>
+	</body>
+
+</html>

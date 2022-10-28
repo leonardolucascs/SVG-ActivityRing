@@ -1,0 +1,62 @@
+body, html {
+  align-items: center;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  min-height: 100%;
+}
+
+.screen {
+  background: #222;
+  display: inline-block;
+  padding: 64px;
+}
+
+#app {
+  height: 256px;
+  width: 256px;
+}
+
+@keyframes RingProgress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+.ActivityRings {
+  height: 100%;
+  width: 100%;
+}
+.ActivityRings .ring {
+  transform-origin: 50%;
+}
+.ActivityRings .completed {
+  animation: RingProgress 1s ease-in-out forwards;
+  stroke-linecap: round;
+}
+.ActivityRings circle {
+  fill: none;
+}
+
+.ring1 .background {
+  stroke: rgba(197, 63, 61, 0.2);
+}
+.ring1 .completed {
+  stroke: #c53f3d;
+}
+
+.ring2 .background {
+  stroke: rgba(148, 213, 90, 0.2);
+}
+.ring2 .completed {
+  stroke: #94d55a;
+}
+
+.ring3 .background {
+  stroke: rgba(112, 190, 215, 0.2);
+}
+.ring3 .completed {
+  stroke: #70bed7;
+}
+
+/*# sourceMappingURL=style.css.map */
